@@ -1,0 +1,27 @@
+.vscode/
+
+# Kernel module build artifacts
+*.o
+*.ko
+*.mod
+*.mod.c
+*.cmd
+*.order
+Module.symvers
+modules.order
+.tmp_versions/
+
+# Qt/qmake build artifacts
+apps/build-qt/
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+*.pro.user
+
+# Local output
+out/
+
+# Editor/system files
+*~
+.DS_Store
