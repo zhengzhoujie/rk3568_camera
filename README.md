@@ -5,8 +5,10 @@
 并使用 OpenCV 做简单手势识别。
 
 编译: 主目录make
+
 可能的问题:驱动可能无法正确的连接isp，因为开机匹配过了，
 所以没有生成节点的话，可以把驱动编译进内核;
+
 这个项目的链路是：IMX415 sensor 通过 MIPI CSI-2 输出 RAW 图像数据，
 4 lane 差分数据线加一组时钟线进入 RK3568 的 CSI/ISP 模块。
 内核侧 sensor 驱动作为 V4L2 subdev 通过异步注册接入 media framework，
